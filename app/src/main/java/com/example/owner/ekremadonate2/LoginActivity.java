@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         email = (EditText) findViewById(R.id.email);
-        password1 = (EditText) findViewById(R.id.password1);
+       // password1 = (EditText) findViewById(R.id.password1);
         signin = (Button) findViewById(R.id.signin);
         signup = (Button) findViewById(R.id.signup);
 
@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1 = new Intent( LoginActivity.this, foodActivity.class);
+                Intent i1 = new Intent( LoginActivity.this, SignupActivity.class);
                 startActivity(i1);
 
 

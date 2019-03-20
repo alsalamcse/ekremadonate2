@@ -6,7 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.awad.ekrma.ekrmadonate.R;
+import com.example.owner.ekremadonate2.R;
+
 
 /**
  * A simple {@link Fragment} subclass.

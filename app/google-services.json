@@ -1,10 +1,55 @@
 {
   "project_info": {
-    "project_number": "478155312712",
-    "firebase_url": "https://ekremadonate2-ed5c3.firebaseio.com",
-    "project_id": "ekremadonate2-ed5c3",
-    "storage_bucket": "ekremadonate2-ed5c3.appspot.com"
+    "project_number": "848067975752",
+    "firebase_url": "https://ekremadonate2.firebaseio.com",
+    "project_id": "ekremadonate2",
+    "storage_bucket": "ekremadonate2.appspot.com"
   },
-  "client": [],
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848067975752:android:57db6267e3062eac",
+        "android_client_info": {
+          "package_name": "com.example.owner.ekremadonate2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848067975752-tk375tmqutln1ciafg8mfi4o74vtoslc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.owner.ekremadonate2",
+            "certificate_hash": "db5263a164fab7973e64232c3ca1c33ff6d3a8d3"
+          }
+        },
+        {
+          "client_id": "848067975752-3a5h22ifqqaknb8mi06du6v5gl6d348m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGhfeBzSSHoHXUS8MjJseSFLe38xL46bo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848067975752-3a5h22ifqqaknb8mi06du6v5gl6d348m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
   "configuration_version": "1"
 }

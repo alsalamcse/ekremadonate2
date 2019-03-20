@@ -7,45 +7,77 @@
     tools:context=".AddingActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etname4"
         android:layout_width="0dp"
-        android:layout_height="51dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="17dp"
         android:ems="10"
         android:hint="Name:"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/eting4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="368dp"
-        android:layout_height="49dp"
+        android:id="@+id/eting4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="19dp"
         android:ems="10"
         android:hint="ingredients:"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="84dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etprice4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etname4" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgfood4"
         android:layout_width="97dp"
-        android:layout_height="88dp"
-        app:srcCompat="@drawable/images"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="236dp" />
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnsave4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etprice4"
+        app:srcCompat="@drawable/images" />
 
     <EditText
-        android:id="@+id/editText4"
-        android:layout_width="368dp"
-        android:layout_height="51dp"
+        android:id="@+id/etprice4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="33dp"
         android:ems="10"
         android:hint="price:"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="152dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imgfood4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eting4" />
+
+    <Button
+        android:id="@+id/btnsave4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="112dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgfood4"
+        app:layout_constraintTop_toBottomOf="@+id/imgfood4" />
 
 </android.support.constraint.ConstraintLayout>
