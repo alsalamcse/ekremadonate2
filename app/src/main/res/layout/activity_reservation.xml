@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservationActivity">
+
+    <Button
+        android:id="@+id/btndate2"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:text="Pick A Date"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="95dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btntime2"
+        android:layout_width="348dp"
+        android:layout_height="67dp"
+        android:text="Pick A Time"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="267dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/cbready"
+        android:layout_width="77dp"
+        android:layout_height="36dp"
+        android:text="Ready"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="427dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="347dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="Address:"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="351dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/cbnotready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Ready"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="463dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etdatepicker"
+        android:layout_width="351dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Date:"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ettime2"
+        android:layout_width="355dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Time:"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="184dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnsave10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="455dp"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>

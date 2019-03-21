@@ -41,30 +41,30 @@ public class TabKha {
         this.image = image;
     }
 
-    public String getFlour() {
+    public String getVegetables() {
         return vegetables;
     }
 
-    public void setFlour(String flour) {
-        vegetables = flour;
+    public void setVegetables(String vegetables1) {
+        vegetables = vegetables1;
     }
 
-    public String getButter() {
+    public String getSpices() {
         return spices;
     }
 
-    public void setButter(String butter) {
-        this.spices = butter;
+    public void setSpices(String spices1) {
+        this.spices = spices1;
+    }
+
+    public void setLiquids(String liquids) {
+        this.liquids = liquids;
     }
 
     public String getOil() {
         return oil;
     }
 
-
-    public void setLiquids(String liquids) {
-        this.liquids = liquids;
-    }
 
     @Override
     public String toString() {

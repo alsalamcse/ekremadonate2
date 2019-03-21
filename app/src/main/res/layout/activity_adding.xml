@@ -6,19 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".AddingActivity">
 
-    <resources>
-        <style android:name="MySpinnerLook"
-            android:parent="@android:style/Widget.TextView.SpinnerItem">
-            <item android:name="android:textSize">22sp</item>
-        </style>
-    </resources>
-
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/text1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="1"
-        style="MySpinnerLook" />
 
     <EditText
         android:id="@+id/etname4"
@@ -53,18 +40,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etname4" />
 
-    <ImageView
-        android:id="@+id/imgfood4"
-        android:layout_width="97dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnsave4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etprice4"
-        app:srcCompat="@drawable/images" />
-
     <EditText
         android:id="@+id/etprice4"
         android:layout_width="0dp"
@@ -82,12 +57,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eting4" />
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:padding="5dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgfood4"
+        android:layout_width="97dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnsave4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:srcCompat="@drawable/images" />
+
     <Button
         android:id="@+id/btnsave4"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginBottom="112dp"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"

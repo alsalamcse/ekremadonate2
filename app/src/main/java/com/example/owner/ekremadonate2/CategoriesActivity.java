@@ -1,5 +1,6 @@
 package com.example.owner.ekremadonate2;
 
+import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class FoodmainActivity extends AppCompatActivity {
+public class CategoriesActivity extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -38,7 +39,7 @@ public class FoodmainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_foodmain );
+        setContentView( R.layout.activity_categories );
 
         Toolbar toolbar = (Toolbar) findViewById( R.id.toolbar );
         setSupportActionBar( toolbar );
@@ -49,6 +50,11 @@ public class FoodmainActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById( R.id.container );
         mViewPager.setAdapter( mSectionsPagerAdapter );
+
+        TabLayout tabLayout = (TabLayout) findViewById( R.id.tabs );
+
+        mViewPager.addOnPageChangeListener( new TabLayout.TabLayoutOnPageChangeListener( tabLayout ) );
+        tabLayout.addOnTabSelectedListener( new TabLayout.ViewPagerOnTabSelectedListener( mViewPager ) );
 
         FloatingActionButton fab = (FloatingActionButton) findViewById( R.id.fab );
         fab.setOnClickListener( new View.OnClickListener() {
@@ -65,7 +71,7 @@ public class FoodmainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate( R.menu.menu_foodmain, menu );
+        getMenuInflater().inflate( R.menu.menu_categories, menu );
         return true;
     }
 
@@ -112,7 +118,7 @@ public class FoodmainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate( R.layout.fragment_foodmain, container, false );
+            View rootView = inflater.inflate( R.layout.fragment_categories, container, false );
             TextView textView = (TextView) rootView.findViewById( R.id.section_label );
             textView.setText( getString( R.string.section_format, getArguments().getInt( ARG_SECTION_NUMBER ) ) );
             return rootView;

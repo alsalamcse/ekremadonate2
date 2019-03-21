@@ -9,19 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".SplashActivity" />
         <activity
-            android:name=".FoodmainActivity"
-            android:label="@string/title_activity_foodmain"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".CategoriesActivity"
+            android:label="@string/title_activity_categories"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddingActivity"
+            android:label="@string/title_activity_categories"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ReservationActivity"></activity>
     </application>
 
 </manifest>

@@ -2,4 +2,5 @@
 <resources>
     <item name="container" type="id" />
     <item name="fab" type="id" />
+    <item name="spinner" type="id" />
 </resources>
