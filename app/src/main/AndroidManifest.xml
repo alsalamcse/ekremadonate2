@@ -18,7 +18,8 @@
             android:name=".AddingActivity"
             android:label="@string/title_activity_categories"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ReservationActivity"></activity>
+        <activity android:name=".ReservationActivity" />
+        <activity android:name=".MybasketActivity"></activity>
     </application>
 
 </manifest>
